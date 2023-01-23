@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+main{
+    /* min-height: 100vh; */
+    height: fit-content;
+    min-height: 100vh;
+    padding-bottom: 5%;
+    
+    
+   
+  }
+  
+
+#title{
+    font-family: 'VT323', sans-serif;
+    /* margin-top: 0rem;
+    padding-top: 3rem;
+    margin-left: 3rem; */
+    font-size: 3rem;
+    width: 100%;
+    animation: typing 5s steps(24), step-end infinite alternate ;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+
+}
+
+#title-container{
+    margin-top: 0rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    margin-left: 20px;
+    
+}
+
+.cards{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+
+}
+
+.cards:nth-child(even){
+    
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.card{
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+}
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 1300px){
+    .projects{
+        justify-content: center;
+            margin-left: 0px;
+
+    }
+    .cards:nth-child(even){
+    
+    display: flex;
+    flex-direction: column;
+
+}
+}
+
+
+@media (max-width: 420px){
+
+.cards{
+    width: 250px;
+}
+
+    .card {
+    width: 250px;
+    height: 200px;
+}
+ 
+}
