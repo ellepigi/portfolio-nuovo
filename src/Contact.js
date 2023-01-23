@@ -6,7 +6,7 @@ export default function Contact  () {
   return (<div className='contact'>
 <section id='contact'>
 
-   <h1 id='title'> Contact me</h1>
+   {/* <h1 id='title'> Contact me</h1> */}
    <div className='form'>
    <form>
       <label form='name'>Name</label>

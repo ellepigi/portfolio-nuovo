@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 #contact{
-    height: 80vh;
+    height: fit-content;
     padding-bottom: 5%;
     
    
@@ -60,7 +60,6 @@ form{
   align-items: flex-start;
   width: fit-content;
   padding: 30px;
-  margin-top: 10vh;
 }
 
 

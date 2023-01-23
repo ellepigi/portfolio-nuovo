@@ -4,24 +4,52 @@
 
 :root{
   --primary-color: #000E8B;
+
+  --primary-color-alpha: black;
+  --font-comuter: 'VT323', sans-serif;
+  --secondary-color: #9595e5;
+  color: white;
+    /* background-image: url("../public/background4.jpg") ; */
+
+}
+
+.background{
+  height: 100vh;
 }
 
 header{
-    background:  linear-gradient(0deg, rgba(255, 255, 255, 0), #000e8b73)     ; 
+  /* background-image: url("../public/background4.jpg") ; */
+
+    background:  rgba(0, 0, 0, 0.527)    ; 
     height: 100vh;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-   justify-content: center;
+   justify-content: center; */
    position: relative;
+   border-bottom: 3px solid black;
+
+   box-sizing: border-box;
    
   }
+
+
+
 
   header h2{
     font-weight: 400;
   }
 
+  h1 span{
+    color: white;
+    animation: color1 1s step-end infinite alternate;
+
+  }
+
   .intro{
+    padding-top: 25vh;
     margin-left: 10%;
+    width: 60%;
+   
    
 
   }
@@ -29,48 +57,93 @@ header{
 .skills{
     /* position: absolute;
     top: 80vh; */
-    width: 100%;
+    margin-top: 60px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
    
 }
+.logos{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+.skills img{
+  /* padding-top: 40px; */
+  height: 80px;
+  width: auto;
+}
 
   
 
-  #greeting, .title{
-    font-family: 'VT323';
-  }
+  /* #greeting, .title{
+    font-family: 'VT323', sans-serif;
+  } */
 
   #greeting{
     width: 100%;
-    animation: typing 4s steps(24), cursor .4s  step-end infinite alternate ;
+    /* animation: typing 4s steps(24), cursor .4s  step-end infinite alternate ; */
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
     padding: 0;
-    border-right: 3px solid black;
+    /* border-right: 1px solid black; */
     
   }
 
   .container{
     display: block;
     width: fit-content;
-    background-color: white;
+    /* background-color: white; */
     padding: 5px;
     /* border-radius: 10px; */
-    border: 2px black solid;
+    /* border: 2px black solid; */
 
    
     
   }
 
-  @keyframes typing {
-    from {width: 0}
+  #github-button{
+    font-family: var(--font-comuter);
+    
+    font-size:1.5rem;
+    padding: 6px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+   display: flex;
   }
-  @keyframes cursor{
-    50%{border-color: transparent;}
+
+
+/* 
+  #github-button svg{
+    display: none;
+    color: red;
+    
   }
+  #github-button:hover svg{
+display: block;  
+} */
+
+ @media (max-width: 600px) {
+  /* #github-button{
+    font-size: 2rem;
+  } */
+  
+ }
+
+ @keyframes color1{
+  100%{
+    color: #552020;
+  }
+ }
+
+
 
   

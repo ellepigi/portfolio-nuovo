@@ -9,7 +9,7 @@ function App() {
     <Nav></Nav>
     <Header/>
     <Projects></Projects>
-    <Contact></Contact>
+    {/* <Contact></Contact> */}
     </div>
   );
 }

@@ -10,6 +10,18 @@ main{
     
    
   }
+
+  main p{
+    color: black;
+  }
+
+  main h1{
+    color: black;
+    text-align: center;
+    position: relative;
+  }
+
+  
   
 
 #title{
@@ -35,7 +47,7 @@ main{
 .projects{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     gap: 40px;
     margin-left: 20px;
     
@@ -50,12 +62,12 @@ main{
 
 }
 
-.cards:nth-child(even){
+/* .cards:nth-child(even){
     
     display: flex;
     flex-direction: column-reverse;
 
-}
+} */
 
 .card{
     width: 400px;
@@ -78,12 +90,12 @@ main{
             margin-left: 0px;
 
     }
-    .cards:nth-child(even){
+    /* .cards:nth-child(even){
     
     display: flex;
     flex-direction: column;
 
-}
+} */
 }
 
 

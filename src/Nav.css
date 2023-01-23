@@ -2,10 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 #logo{
-    font-family: 'VT323';
+    /* font-family: 'VT323'; */
+    font-weight: 400;
     border-right: 3px solid black;
     animation-iteration-count: infinite;
-    animation: cursor .4s step-end infinite alternate;
+    /* animation: cursor .4s step-end infinite alternate; */
     margin: 0;
     padding: 0;
 
@@ -21,21 +22,18 @@
   }
    */
   nav{
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
 
     padding-inline: 20px;
-    box-sizing: border-box;
     height: 10vh;
     width: 100%;
-    background-color: rgba(223, 36, 36, 0);
+    /* background-color: rgba(223, 36, 36, 0); */
     position: fixed;
     top:0;
-    align-items: baseline;
     z-index: 1;
-    
   
   }
   
@@ -49,10 +47,10 @@
 
   li:hover{
     cursor:pointer;
-    border-right: 3px solid black;
-    animation: cursor .4s step-end infinite alternate;
+    /* border-right: 3px solid black; */
+    /* animation: cursor .4s step-end infinite alternate; */
   }
-
+/* 
   @keyframes cursor{
     50%{border-color: transparent;}
   }
@@ -62,4 +60,4 @@
       font-size: 1rem;
       padding: 0;
     }
-  }
+  } */

@@ -6,9 +6,8 @@ import './App.css'
 export default function Projects  () {
   return (
 <main id='main'>
-  <div className='container' id='title-container'>
-   <h1 id='title'> My projects</h1>
-   </div>
+   <h1 ><span className='line'></span> My projects</h1>
+   
    <div className='projects'>
     <div className="cards">
       <div className='card'><img src="/projects/todo.png" alt="#"/></div>
@@ -27,12 +26,7 @@ export default function Projects  () {
 <button disabled>React</button>
 </div>
     </div>
-    <div className="cards">
-      <div className='card'></div>
-      <p>Con il termine lorem ipsum si indica un testo segnaposto utilizzato da grafici,
-         progettisti, programmatori e tipografi a modo riempitivo per bozzetti e prove grafiche. Wikipedia
-</p>
-    </div>
+    
 
    </div>
 </main>
