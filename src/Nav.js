@@ -8,10 +8,10 @@ export default function Nav  () {
         <h2 id='logo'>Ludovico Pio Gnerre</h2>
         </div>
         <ul>
-          <li>About</li>
-          <li>My Projects</li>
+        <li><a href='#about'>About</a></li>
+        <li>< a href='#projects'>My Projects</a></li>
 
-          <li>Contact me</li>
+        <li>< a href='#contact'>Contact me</a></li>
 
         </ul>
        </nav>  

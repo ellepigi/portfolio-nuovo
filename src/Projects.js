@@ -5,9 +5,11 @@ import './App.css'
 
 export default function Projects  () {
   return (
-<main id='main'>
-   <h1 ><span className='line'></span> My projects</h1>
+<main id='projects'>
+  <div className='title'>
+   <h1 ><div className='line'></div> My projects</h1>
    
+   </div>
    <div className='projects'>
     <div className="cards">
       <div className='card'><img src="/projects/todo.png" alt="#"/></div>

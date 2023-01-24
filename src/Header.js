@@ -13,7 +13,7 @@ export default function Header  () {
     <h2>I'm a "semi" self-taught Junior Frontend Developer. If you're interested, check out my skills and my code!</h2>
    </div>
    <div className='skills'>
-    <button type='button' id="github-button">Github Profile</button>
+    <button type='button' className='button1'>Github Profile</button>
     <h1 className='title'> My Skills!</h1>
     <div className='logos'>
       <img src='/skills/html.png' alt='#'></img>

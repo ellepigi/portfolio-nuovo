@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 main{
-    /* min-height: 100vh; */
     height: fit-content;
     min-height: 100vh;
     padding-bottom: 5%;
@@ -17,8 +16,29 @@ main{
 
   main h1{
     color: black;
-    text-align: center;
+    margin-bottom: 0;
+    display: inline;
     position: relative;
+  }
+
+  .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    
+  }
+
+  .line{
+    
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: -5px;
+    animation: color2 3s ease-in-out 1 forwards;
+    
   }
 
   
@@ -26,9 +46,7 @@ main{
 
 #title{
     font-family: 'VT323', sans-serif;
-    /* margin-top: 0rem;
-    padding-top: 3rem;
-    margin-left: 3rem; */
+  
     font-size: 3rem;
     width: 100%;
     animation: typing 5s steps(24), step-end infinite alternate ;
@@ -47,9 +65,11 @@ main{
 .projects{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     /* align-items: center; */
     gap: 40px;
     margin-left: 20px;
+    animation: appear 1s ease-in 1 forwards;
     
 }
 
@@ -62,26 +82,47 @@ main{
 
 }
 
-/* .cards:nth-child(even){
-    
-    display: flex;
-    flex-direction: column-reverse;
 
-} */
 
 .card{
     width: 400px;
     height: 200px;
     border: 1px solid black;
+    overflow: hidden;
+    border: solid 2px grey;
+    border-radius: 1rem;
+    transition: 0.2s ease-in-out;
+
 }
+
+.card:hover{
+    box-shadow: 5px 5px 15px -4px rgba(0,0,0,0.71);}
+
 .card img{
     height: 100%;
     width: 100%;
+    transition: 0.2s ease-in;
 }
+
+.card img:hover{
+    transform: scale(1.1);
+}
+
 
 .buttons{
     display: flex;
     gap: 10px;
+   
+
+}
+
+.buttons button{
+    font-family: var(--font-comuter);
+    background-color: transparent;
+    font-size: 1rem;
+    color: grey;
+    border-color: grey;
+    border: 2px solid grey;
 }
 
 @media (max-width: 1300px){
@@ -90,12 +131,20 @@ main{
             margin-left: 0px;
 
     }
-    /* .cards:nth-child(even){
-    
-    display: flex;
-    flex-direction: column;
 
-} */
+}
+@keyframes color2{
+    100%{
+      background-color: var(--secondary-color);
+    }
+   }
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 

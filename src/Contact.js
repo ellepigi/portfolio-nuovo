@@ -4,18 +4,21 @@ import './Contact.css'
 
 export default function Contact  () {
   return (<div className='contact'>
+    <div className='title'>
+   <h1 ><div className='line'></div> Contact me</h1>
+   
+   </div>
 <section id='contact'>
 
-   {/* <h1 id='title'> Contact me</h1> */}
    <div className='form'>
    <form>
-      <label form='name'>Name</label>
-      <input type="text"></input>
-      <label form='email'>Email</label>
-      <input type="text"></input>
-      <label form="message">Your Message</label>
-      <textarea></textarea>      
-      <button type='submit'>Submit</button>
+      <label form='name'></label>
+      <input type="text" placeholder='Your Name'></input>
+      <label form='email'></label>
+      <input type="text" placeholder='Your email'></input>
+      <label form="message"> </label>
+      <textarea placeholder='Your Message'></textarea>      
+      <button type='submit' className='button1'>Submit</button>
 
    </form>
   </div>

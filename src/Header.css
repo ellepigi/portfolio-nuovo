@@ -2,16 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 
-:root{
-  --primary-color: #000E8B;
 
-  --primary-color-alpha: black;
-  --font-comuter: 'VT323', sans-serif;
-  --secondary-color: #9595e5;
-  color: white;
-    /* background-image: url("../public/background4.jpg") ; */
-
-}
 
 .background{
   height: 100vh;
@@ -41,7 +32,7 @@ header{
 
   h1 span{
     color: white;
-    animation: color1 1s step-end infinite alternate;
+    animation: color1 1s ease-in 1  forwards;
 
   }
 
@@ -76,8 +67,11 @@ header{
   /* padding-top: 40px; */
   height: 80px;
   width: auto;
+  transition: scale 0.2 ease-in-out;
 }
-
+.skills img:hover{
+  transform: scale(1.2);
+}
   
 
   /* #greeting, .title{
@@ -107,7 +101,7 @@ header{
     
   }
 
-  #github-button{
+  .button1{
     font-family: var(--font-comuter);
     
     font-size:1.5rem;
@@ -131,6 +125,13 @@ header{
 display: block;  
 } */
 
+@keyframes color1{
+  100%{
+    color: var(--secondary-color);
+  }
+ }
+
+
  @media (max-width: 600px) {
   /* #github-button{
     font-size: 2rem;
@@ -138,11 +139,6 @@ display: block;
   
  }
 
- @keyframes color1{
-  100%{
-    color: #552020;
-  }
- }
 
 
 

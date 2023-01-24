@@ -4,12 +4,15 @@
 #logo{
     /* font-family: 'VT323'; */
     font-weight: 400;
-    border-right: 3px solid black;
-    animation-iteration-count: infinite;
-    /* animation: cursor .4s step-end infinite alternate; */
     margin: 0;
     padding: 0;
+    color: white;
+    transition: 0.5s ease-in-out;
 
+  }
+
+  #logo:hover{
+    color: var(--secondary-color);
   }
 
   /* .logo-container{
@@ -37,6 +40,10 @@
   
   }
   
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
   
   ul{
     display: flex;
@@ -44,6 +51,30 @@
     gap: 20px;
     color: white;
   }
+  ul li{
+    position: relative;
+  }
+
+  nav a:hover{
+    color: var(--secondary-color);
+    transition: all 0.1s ease-in-out;
+}
+  
+nav a::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-color: var(--secondary-color);
+  width: 0%;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::after{
+  width: 100%;
+}
+
 
   li:hover{
     cursor:pointer;
