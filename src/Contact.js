@@ -24,7 +24,8 @@ export default function Contact  () {
   </div>
 </section>
 <footer>
-   
+   <div className='email'><h2>Or send me an email at <a href= "mailto:ellepgi@gmail.com">ellepgi@gmail.com</a>!</h2></div>
+   <div className='copyright'><span>Made by Ludovico Pio Gnerre ©</span></div>
 </footer>
 </div>
        )

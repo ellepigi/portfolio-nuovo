@@ -1,22 +1,32 @@
 import React from 'react'
 import './Header.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Header  () {
   return (
-  <div className='background'>
+  <div id='about'>
  <header>
+  {/* <div className='background'>   </div> */}
    <div className='intro'>
     <div className='container'>
     <h1 id='greeting'>Hi, my name is <span>Ludovico</span>!</h1>
     </div>
     <h2>I'm a "semi" self-taught Junior Frontend Developer. If you're interested, check out my skills and my code!</h2>
+    <div className='buttons'>
+    <button type='button' className='button1'>Github Profile<FontAwesomeIcon icon={faArrowRight} /></button>
+    <button type='button' className='button1'>Linkedin Profile<FontAwesomeIcon icon={faArrowRight} /></button>
+   
+    </div>
+
    </div>
    <div className='skills'>
-    <button type='button' className='button1'>Github Profile</button>
-    <h1 className='title'> My Skills!</h1>
+    <h1 className='title-skills'> My Skills!</h1>
     <div className='logos'>
       <img src='/skills/html.png' alt='#'></img>
+      <img src='/skills/css.png' alt='#'></img>
+
       <img src='/skills/javascript.png' alt='#'></img>
       <img src='/skills/vscode.png' alt='#'></img>
 
@@ -33,6 +43,7 @@ export default function Header  () {
     </div>
    </div>
    
+
 
  </header>
  </div>

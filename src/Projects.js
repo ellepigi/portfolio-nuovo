@@ -3,6 +3,12 @@ import './Projects.css'
 import './App.css'
 
 
+
+
+
+
+
+
 export default function Projects  () {
   return (
 <main id='projects'>
@@ -16,8 +22,10 @@ export default function Projects  () {
       <p>Just a very simple To do list...
 </p>
 <div className="buttons">
-<button disabled>Html</button>
+<button disabled>Html & CSS</button>
 <button disabled>Javascript</button>
+{/* <img src='/skills/html.png' alt='#'></img>
+      <img src='/skills/css.png' alt='#'></img> */}
 </div>
     </div>
     <div className="cards">

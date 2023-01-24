@@ -3,22 +3,27 @@
 
 
 
-
+/* 
 .background{
-  height: 100vh;
-}
+  background-image: url(../public/background4.jpg);
+  position: absolute;
+  top:0;
+  height: 100vw;
+  width: 100vw;
+  z-index: -1;
+} */
 
 header{
   /* background-image: url("../public/background4.jpg") ; */
 
     background:  rgba(0, 0, 0, 0.527)    ; 
-    height: 100vh;
+    height: fit-content;
     /* display: flex;
     flex-direction: column;
    justify-content: center; */
    position: relative;
    border-bottom: 3px solid black;
-
+  padding-bottom: 2rem;
    box-sizing: border-box;
    
   }
@@ -32,7 +37,7 @@ header{
 
   h1 span{
     color: white;
-    animation: color1 1s ease-in 1  forwards;
+    animation: color1 1s ease-in-out 1  forwards;
 
   }
 
@@ -56,8 +61,17 @@ header{
     justify-content: center;
    
 }
+
+.title-skills{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
 .logos{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 
@@ -67,7 +81,7 @@ header{
   /* padding-top: 40px; */
   height: 80px;
   width: auto;
-  transition: scale 0.2 ease-in-out;
+  transition:  0.1s ease-in-out;
 }
 .skills img:hover{
   transform: scale(1.2);
@@ -112,7 +126,28 @@ header{
     color: white;
     border-color: white;
    display: flex;
+   align-items: center;
+   gap:4px;
+   
+
   }
+
+  .button1 > * {
+    height: 15px;
+    width: auto;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 0.1s ease-in;
+
+  }
+
+  .button1:hover > *{
+   /* scale: 1.2; */
+   opacity:1;
+   transform: translateX(0%);
+
+  }
+
 
 
 /* 
