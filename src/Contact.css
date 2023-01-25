@@ -89,6 +89,7 @@ form .button1{
 .email{
   display: flex;
   flex-wrap: wrap;
+  max-width:70vw;
 }
 
 .copyright{
@@ -119,5 +120,17 @@ form .button1{
 
   input, textarea{
     width: 250px;
+  }
+}
+
+@media (max-width: 600px){
+  footer h2{
+    font-size: 0.8rem;
+  }
+
+
+
+  input, textarea{
+    width: 150px;
   }
 }

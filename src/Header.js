@@ -1,7 +1,10 @@
 import React from 'react'
 import './Header.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from 'react-icons/fa';
+
+
 
 
 export default function Header  () {
@@ -15,8 +18,8 @@ export default function Header  () {
     </div>
     <h2>I'm a "semi" self-taught Junior Frontend Developer. If you're interested, check out my skills and my code!</h2>
     <div className='buttons'>
-    <button type='button' className='button1'>Github Profile<FontAwesomeIcon icon={faArrowRight} /></button>
-    <button type='button' className='button1'>Linkedin Profile<FontAwesomeIcon icon={faArrowRight} /></button>
+    <button type='button' className='button1'>Github Profile<FaGithub/></button>
+    <button type='button' className='button1'>Linkedin Profile<FaLinkedin/></button>
    
     </div>
 

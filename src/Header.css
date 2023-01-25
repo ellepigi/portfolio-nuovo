@@ -186,11 +186,44 @@ display: block;
     width: auto;
    }
 
-   
+   .button1{
+    font-size: 1rem;
+   }
 
 }
- 
+@media (max-width:650px){
 
+#greeting{
+  font-size: 1.2rem
+}
+.intro{
+  font-size: 0.8rem;
+}
 
+.logos{
+  width:60vw;
+}
+
+.button1{
+  font-size: 0.7rem;
+}
+}
+@media (max-width:500px){
+
+  #greeting{
+    font-size: 1rem
+  }
+  .intro{
+    font-size: 0.6rem;
+  }
+  
+  .logos{
+    width:60vw;
+  }
+  .skills img{
+    height: 1.5rem;
+    width: auto;
+   }
+  }
 
   

@@ -37,6 +37,7 @@
     position: fixed;
     top:0;
     z-index: 1;
+
   
   }
   
@@ -95,3 +96,14 @@ a:hover::after{
       padding: 0;
     }
   } */
+
+  @media (max-width: 650px){
+    #logo{
+      font-size: 1.2rem;
+
+    }
+
+    nav li{
+      font-size: 0.8rem;
+    }
+  }
