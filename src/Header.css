@@ -3,30 +3,27 @@
 
 
 
-/* 
+
 .background{
-  background-image: url(../public/background4.jpg);
   position: absolute;
-  top:0;
-  height: 100vw;
-  width: 100vw;
+  right:-200px;
   z-index: -1;
-} */
+  opacity: 0.3;
+}
 
 header{
   /* background-image: url("../public/background4.jpg") ; */
 
-    background-color:  rgba(0, 0, 0, 0.527)    ; 
+    /* background-color:  rgb(144, 171, 228)    ;  */
     height: fit-content;
     /* display: flex;
     flex-direction: column;
    justify-content: center; */
    position: relative;
-   border-bottom: 3px solid black;
+   border-bottom: 3px solid var(--secondary-color);
   padding-bottom: 2rem;
    box-sizing: border-box;
-   background-image: url(../public/background4.jpg);
-   
+   overflow: hidden;
   }
 
 
@@ -116,8 +113,8 @@ header{
 
   .button1{
     font-family: var(--font-comuter);
-    
     font-size:1.2rem;
+    cursor: pointer;
     padding: 10px;
     border: 0px solid black;
     /* border-radius: 10px; */
@@ -206,6 +203,14 @@ display: block;
 
 .button1{
   font-size: 0.7rem;
+}
+
+h2{
+  font-size: 1rem;
+}
+.background{
+  transform: scale(0.5);
+  right: -350px;
 }
 }
 @media (max-width:500px){

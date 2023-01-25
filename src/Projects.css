@@ -219,15 +219,7 @@ main{
         align-items: center;
     }
 
-    .cards{
-        width: 170px;
-    }
-
-    .card{
-      width: 170px;
-      height:auto;
-  
-    }
+   
     .title{
         font-size: 0.7rem;
       }

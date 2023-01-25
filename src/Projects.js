@@ -18,7 +18,8 @@ export default function Projects  () {
    </div>
    <div className='projects'>
     <div className="cards">
-      <div className='card'><img src="/projects/todo.png" alt="#"/></div>
+      <div className='card'><a href="https://todolistellepigi.netlify.app" target="_blank">
+        <img src="/projects/todo.png" alt="#"/></a></div>
       <p>Just a very simple To do list...
 </p>
 <div className="buttons">
@@ -29,7 +30,8 @@ export default function Projects  () {
 </div>
     </div>
     <div className="cards">
-      <div className='card'><img src="/projects/ecommerce.png" alt="#"/></div>
+      <div className='card'><a href="https://reactshop-ellepigi.netlify.app/" target="_blank">
+        <img src="/projects/ecommerce.png" alt="#"/></a></div>
       <p>An ecommerce made with React... still needs some changes though!
 </p>
 <div className="buttons">
