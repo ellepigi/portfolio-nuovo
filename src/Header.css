@@ -20,7 +20,7 @@ header{
     flex-direction: column;
    justify-content: center; */
    position: relative;
-   border-bottom: 3px solid var(--secondary-color);
+   border-bottom: 3px solid black;
   padding-bottom: 2rem;
    box-sizing: border-box;
    overflow: hidden;
@@ -77,7 +77,7 @@ header{
 
 .skills img{
   /* padding-top: 40px; */
-  height: 70px;
+  height: 60px;
   width: auto;
   transition:  0.1s ease-in-out;
 }
@@ -109,6 +109,11 @@ header{
 
    
     
+  }
+
+  .buttons{
+   opacity: 1;
+  
   }
 
   .button1{
