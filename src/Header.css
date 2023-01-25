@@ -16,7 +16,7 @@
 header{
   /* background-image: url("../public/background4.jpg") ; */
 
-    background:  rgba(0, 0, 0, 0.527)    ; 
+    background-color:  rgba(0, 0, 0, 0.527)    ; 
     height: fit-content;
     /* display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@ header{
    border-bottom: 3px solid black;
   padding-bottom: 2rem;
    box-sizing: border-box;
+   background-image: url(../public/background4.jpg);
    
   }
 
@@ -43,8 +44,8 @@ header{
 
   .intro{
     padding-top: 25vh;
-    margin-left: 10%;
-    width: 60%;
+    margin-left: 10vw;
+    width: 50vw;
    
    
 
@@ -79,7 +80,7 @@ header{
 
 .skills img{
   /* padding-top: 40px; */
-  height: 80px;
+  height: 70px;
   width: auto;
   transition:  0.1s ease-in-out;
 }
@@ -93,10 +94,8 @@ header{
   } */
 
   #greeting{
-    width: 100%;
+    width: 50vw;
     /* animation: typing 4s steps(24), cursor .4s  step-end infinite alternate ; */
-    overflow: hidden;
-    white-space: nowrap;
     margin: 0;
     padding: 0;
     /* border-right: 1px solid black; */
@@ -118,18 +117,22 @@ header{
   .button1{
     font-family: var(--font-comuter);
     
-    font-size:1.5rem;
-    padding: 6px;
-    border-radius: 10px;
+    font-size:1.2rem;
+    padding: 10px;
+    border: 0px solid black;
+    /* border-radius: 10px; */
     transition: all 0.1s ease-in-out;
-    background-color: transparent;
+    background-color: #6363ff;
     color: white;
-    border-color: white;
    display: flex;
    align-items: center;
    gap:4px;
+   transition: 0.1s ease-in-out;
    
 
+  }
+  .button1:hover{
+  transform: scale(1.05);
   }
 
   .button1 > * {
@@ -167,13 +170,26 @@ display: block;
  }
 
 
- @media (max-width: 600px) {
-  /* #github-button{
-    font-size: 2rem;
-  } */
-  
- }
+ @media (max-width:800px){
 
+  #greeting{
+    font-size: 2rem;
+  }
+
+
+  .intro{
+    font-size: 1rem;
+  }
+
+  .skills img{
+    height: 2rem;
+    width: auto;
+   }
+
+   
+
+}
+ 
 
 
 

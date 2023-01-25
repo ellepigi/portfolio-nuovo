@@ -22,7 +22,7 @@ export default function Header  () {
 
    </div>
    <div className='skills'>
-    <h1 className='title-skills'> My Skills!</h1>
+    <h2 className='title-skills'> My Skills!</h2>
     <div className='logos'>
       <img src='/skills/html.png' alt='#'></img>
       <img src='/skills/css.png' alt='#'></img>

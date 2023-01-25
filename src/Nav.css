@@ -53,10 +53,13 @@
   }
   ul li{
     position: relative;
+    transition: transform 0.1s ease-in  ;
+  }
+  li:hover{
+    transform: scale(1.05);
   }
 
   li a:hover{
-    /* color: var(--secondary-color); */
     transition: all 0.1s ease-in-out;
 }
   

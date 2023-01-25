@@ -22,8 +22,8 @@ export default function Projects  () {
       <p>Just a very simple To do list...
 </p>
 <div className="buttons">
-<button disabled>Html & CSS</button>
-<button disabled>Javascript</button>
+<button  className='html'>Html & CSS</button>
+<button disabled className='javascript'>Javascript</button>
 {/* <img src='/skills/html.png' alt='#'></img>
       <img src='/skills/css.png' alt='#'></img> */}
 </div>
@@ -33,7 +33,7 @@ export default function Projects  () {
       <p>An ecommerce made with React... still needs some changes though!
 </p>
 <div className="buttons">
-<button disabled>React</button>
+<button disabled className='react'>React</button>
 </div>
     </div>
     

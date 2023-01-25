@@ -17,9 +17,10 @@ export default function Contact  () {
       <label form='email'></label>
       <input type="text" placeholder='Your email'></input>
       <label form="message"> </label>
-      <textarea placeholder='Your Message'></textarea>      
+      <textarea placeholder='Your Message'></textarea> 
+      <div className="button-div">    
       <button type='submit' className='button1'>Submit</button>
-
+      </div> 
    </form>
   </div>
 </section>
