@@ -83,6 +83,7 @@ main{
 
 
 .card{
+    position: relative;
     width: 400px;
     height: 200px;
     border: 1px solid black;
@@ -104,7 +105,38 @@ main{
 
 .card img:hover{
     transform: scale(1.05);
+    z-index: -3;
 }
+
+.github-icon{
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    color: grey;
+    z-index: 1;
+    display: none;
+    
+}
+
+.card:hover .github-icon{
+    height: 2rem;
+    width: auto;
+    display: block;
+}
+
+
+
+.github-icon *{
+   height: 2rem;
+   width: auto;
+   transition: 0.1s ease-in;
+}
+.github-icon:hover{
+    color: black;
+    cursor: pointer;
+ }
+ 
+
 
 /* buttons */
 

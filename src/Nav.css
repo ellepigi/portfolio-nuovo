@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+
+
 #logo{
     /* font-family: 'VT323'; */
     font-weight: 400;
     margin: 0;
     padding: 0;
-    color: white;
     transition: 0.2s ease-in-out;
+    font-size: 1.3rem;
 
   }
 
@@ -25,11 +27,11 @@
   }
    */
   nav{
-    background-color: black;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    color: black;
     padding-inline: 20px;
     height: 10vh;
     width: 100%;
@@ -40,6 +42,38 @@
 
   
   }
+
+
+  .burger{
+    display: none;
+  }
+
+  .menu-responsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    top:0;
+    left: 0;
+    background-color: black;
+    height: 30vh;
+    width: 100%;
+    /* opacity: 0; */
+    display: none;
+    z-index: 34;
+
+  }
+  .menu-responsive ul{
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
   
   a{
     text-decoration: none;
@@ -50,7 +84,7 @@
     display: flex;
     list-style: none;
     gap: 20px;
-    color: white;
+    /* color: white; */
   }
   ul li{
     position: relative;
@@ -106,4 +140,23 @@ a:hover::after{
     nav li{
       font-size: 0.8rem;
     }
+
+    nav ul{
+      display: none;
+    }
+
+    .burger{
+      display: block;
+      
+    }
+
+    .burger * {
+        height:1.5rem;
+        width: auto;
+    }
+
+    .burger *:focus{
+      color: var(--secondary-color);
+    }
+    
   }
