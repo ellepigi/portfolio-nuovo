@@ -18,7 +18,7 @@ export default function Header  () {
     <div className='container'>
     <h1 id='greeting'>Hi, i'm <span>Ludovico</span>!</h1>
     </div>
-    <h2>I'm a "semi" self-taught Junior Frontend Developer. If you're interested, check out my skills and my code!</h2>
+    <h2>I'm a "semi" self-taught Junior Frontend Developer.<br/> If you're interested, check out my skills and my code!</h2>
     <div className='buttons'>
     <a href="https://github.com/ellepigi" target="_blank"><button type='button' className='button1'>Github Profile<FaGithub/></button></a>
     <a href="https://www.linkedin.com/in/ludovico-pio-gnerre-04b326252/" target="_blank"><button type='button' className='button1'>Linkedin Profile<FaLinkedin/></button></a>

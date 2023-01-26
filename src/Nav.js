@@ -11,11 +11,11 @@ export default function Nav  () {
 
   const showNav= () => {
     navRef.current.classList.add("active")
-    navRef.current.classList.remove("menu-responsive")
+    // navRef.current.classList.remove("menu-responsive")
   }
 
   const removeNav= ()=>{
-    navRef.current.classList.add("menu-responsive")
+    // navRef.current.classList.add("menu-responsive")
     navRef.current.classList.remove("active")
 
   }
@@ -24,7 +24,7 @@ export default function Nav  () {
 
   return (
     <>
-    <div ref={navRef} className='menu-responsive'>
+    <div ref={navRef}  className='menu-responsive'>
 
     <ul>
         <li><a href='#about'>About</a></li>
