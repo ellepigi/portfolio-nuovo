@@ -1,4 +1,4 @@
-import {React, useRef} from 'react'
+import {React, useRef, useState, useEffect} from 'react'
 import './Nav.css'
 import { RxHamburgerMenu } from 'react-icons/rx';
 
@@ -6,19 +6,41 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 
 export default function Nav  () { 
 
+
+  const [notInView, setNotInView] = useState(true);
+
+
   const navRef= useRef()
-  
+  const mainNavRef= useRef()
 
   const showNav= () => {
     navRef.current.classList.add("active")
-    // navRef.current.classList.remove("menu-responsive")
   }
 
   const removeNav= ()=>{
-    // navRef.current.classList.add("menu-responsive")
     navRef.current.classList.remove("active")
 
   }
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          setNotInView(false);
+          mainNavRef.current.classList.add("nav-sticky");
+
+        } else {
+          setNotInView(true);
+        }
+      },
+      { threshold: [0] }
+    );
+    if (mainNavRef.current) {
+      observer.observe(mainNavRef.current);
+    }
+   
+  }, []);
 
 
 
@@ -36,7 +58,7 @@ export default function Nav  () {
         <button onClick={removeNav}>X</button>
     </div>
    
-<nav>   
+<nav ref={mainNavRef}>   
     
   <div className="logo-container">
         <h2 id='logo'><a href='#about'>Ludovico Pio Gnerre</a></h2>

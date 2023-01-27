@@ -39,8 +39,19 @@
     position: absolute;
     top:0;
     z-index: 1;
-
+    transition: 1s ease-in;
   
+  }
+
+  .nav-sticky{
+    position: fixed;
+    background-color: black;
+    color: white;
+
+  }
+
+  .nav-sticky .burger{
+    color: white;
   }
 
   /* Menu responsive */
@@ -52,7 +63,7 @@
 
   .menu-responsive{
     
-    position: absolute;
+    position: sticky;
     color: white;
     top:0;
     left: 0;

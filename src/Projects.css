@@ -33,11 +33,10 @@ main{
     
     height: 3px;
     width: 100%;
-    background-color: black;
+    background-color: var(--secondary-color);
     position: absolute;
     bottom: -5px;
-    animation: color2 3s ease-in-out 1 forwards;
-    transition: 2s ease-in-out;
+    transition: 1.5s ease-in;
 
     
   }
@@ -67,7 +66,7 @@ main{
     justify-content: center;
     gap: 40px;
     margin-left: 20px;
-    transition: 2s ease-in-out;
+    transition: 1.5s ease-in-out;
     transform: translateY(20%);
 }
 
