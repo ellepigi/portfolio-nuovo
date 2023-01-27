@@ -37,8 +37,18 @@ main{
     position: absolute;
     bottom: -5px;
     animation: color2 3s ease-in-out 1 forwards;
+    transition: 2s ease-in-out;
+
     
   }
+
+
+  
+.hidden-line{
+    width: 0%;
+  }
+
+
 
   
   

@@ -1,7 +1,8 @@
-import React from 'react'
+import {React, useRef, useState, useEffect} from 'react'
 import './Projects.css'
 import './App.css'
 import { FaGithub } from 'react-icons/fa'
+import { useInView } from 'react-intersection-observer'
 
 
 
@@ -10,10 +11,34 @@ import { FaGithub } from 'react-icons/fa'
 
 
 export default function Projects  () {
+
+  const [inView, setInView] = useState(false);
+
+  const lineRef = useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.intersectionRatio > 0) {
+          setInView(true);
+          lineRef.current.classList.remove("hidden-line");
+
+        } else {
+          setInView(false);
+        }
+      },
+      { threshold: [1] }
+    );
+    if (lineRef.current) {
+      observer.observe(lineRef.current);
+    }
+  }, []);
+
+
   return (
 <main id='projects'>
   <div className='title'>
-   <h1 ><div className='line'></div> My projects</h1>
+   <h1 ><div ref={lineRef} className= "line hidden-line"></div> My projects</h1>
    
    </div>
    <div className='projects'>

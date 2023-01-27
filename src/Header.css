@@ -9,6 +9,7 @@
   right:-200px;
   z-index: -1;
   opacity: 0.3;
+  
 }
 
 header{
@@ -53,7 +54,7 @@ header{
   margin-right: auto;
   left: 0;
   top:70vh;
-  width: 100vw;
+  width: 100%;
     gap: 20px;
     display: flex;
     flex-direction: column;
@@ -183,6 +184,7 @@ display: block;
     color: var(--secondary-color);
    }
  }
+
 
 
  @media (max-width:800px){

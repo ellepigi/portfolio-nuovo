@@ -12,7 +12,7 @@ export default function Header  () {
   
   <div id='about'>
  <header>
-  <div className='background2'></div>
+  {/* <div className='background2'></div> */}
   <img src='/undraw.png' className='background'></img>
    <div className='intro'>
     <div className='container'>
