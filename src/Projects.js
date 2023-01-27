@@ -15,6 +15,7 @@ export default function Projects  () {
   const [inView, setInView] = useState(false);
 
   const lineRef = useRef();
+  const projectsRef =useRef();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -22,6 +23,7 @@ export default function Projects  () {
         if (entry.intersectionRatio > 0) {
           setInView(true);
           lineRef.current.classList.remove("hidden-line");
+          projectsRef.current.classList.add("projects")
 
         } else {
           setInView(false);
@@ -32,6 +34,9 @@ export default function Projects  () {
     if (lineRef.current) {
       observer.observe(lineRef.current);
     }
+    if (projectsRef.current) {
+      observer.observe(projectsRef.current);
+    }
   }, []);
 
 
@@ -41,7 +46,7 @@ export default function Projects  () {
    <h1 ><div ref={lineRef} className= "line hidden-line"></div> My projects</h1>
    
    </div>
-   <div className='projects'>
+   <div ref={projectsRef} className='projects-hidden'>
     <div className="cards">
       <div className='card'><a href="https://github.com/ellepigi/esercizi/tree/main/todolist" target="_blank">
         <div className='github-icon'><FaGithub></FaGithub></div></a>
@@ -52,8 +57,7 @@ export default function Projects  () {
 <div className="buttons">
 <button  className='html'>Html & CSS</button>
 <button disabled className='javascript'>Javascript</button>
-{/* <img src='/skills/html.png' alt='#'></img>
-      <img src='/skills/css.png' alt='#'></img> */}
+
 </div>
     </div>
     <div className="cards">

@@ -53,31 +53,33 @@ main{
   
   
 
-#title{
-    font-family: 'VT323', sans-serif;
-  
-    font-size: 3rem;
-    width: 100%;
-    animation: typing 5s steps(24), step-end infinite alternate ;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0;
-    padding: 0;
 
-}
 
 #title-container{
     margin-top: 0rem;
     margin-top: 3rem;
     margin-left: 3rem;
 }
-.projects{
+.projects-hidden{
+    opacity: 0;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
     gap: 40px;
     margin-left: 20px;
-    animation: appear 1s ease-in 1 forwards;
+    transition: 2s ease-in-out;
+    transform: translateY(20%);
+}
+
+.projects{
+    opacity: 1;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 40px;
+    margin-left: 20px;
+    transform: translateY(0%);
+    /* animation: appear 1s ease-in 1 forwards; */
     
 }
 

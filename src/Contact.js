@@ -1,11 +1,35 @@
-import React from 'react'
+import {React, useRef, useState, useEffect} from 'react'
 import './Contact.css'
 
 
 export default function Contact  () {
+   const [inView, setInView] = useState(false);
+
+   const lineRef = useRef();
+ 
+   useEffect(() => {
+     const observer = new IntersectionObserver(
+       ([entry]) => {
+         if (entry.intersectionRatio > 0) {
+           setInView(true);
+           lineRef.current.classList.remove("hidden-line");
+ 
+         } else {
+           setInView(false);
+         }
+       },
+       { threshold: [1] }
+     );
+     if (lineRef.current) {
+       observer.observe(lineRef.current);
+     }
+    
+   }, []);
+
+
   return (<div className='contact'>
     <div className='title'>
-   <h1 ><div className='line'></div> Contact me</h1>
+   <h1 ><div ref={lineRef} className='line hidden-line'></div> Contact me</h1>
    
    </div>
 <section id='contact'>
