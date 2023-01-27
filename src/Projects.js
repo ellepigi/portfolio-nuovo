@@ -78,7 +78,7 @@ export default function Projects  () {
         for the cart... still needs some changes though!
 </p>
 <div className="buttons">
-<button disabled className='react'>React</button>
+<button disabled>React</button>
 </div>
     </div>
     
