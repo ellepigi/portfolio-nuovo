@@ -54,18 +54,18 @@ main{
 
 
 
-#title-container{
+/* #title-container{
     margin-top: 0rem;
     margin-top: 3rem;
     margin-left: 3rem;
-}
+} */
 .projects-hidden{
     opacity: 0;
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
     gap: 40px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     transition: 1s ease-in-out;
     transform: translateY(20%);
 }
@@ -76,7 +76,7 @@ main{
     /* flex-wrap: wrap; */
     justify-content: center;
     gap: 40px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     transform: translateY(0%);
     /* animation: appear 1s ease-in 1 forwards; */
     
