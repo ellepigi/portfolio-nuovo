@@ -126,6 +126,14 @@ form .button1{
 
 
   input, textarea{
+    width: 200px;
+  }
+}
+@media (max-width: 450px){
+
+
+
+  input, textarea{
     width: 150px;
   }
 }

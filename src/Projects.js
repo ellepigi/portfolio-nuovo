@@ -18,13 +18,11 @@ export default function Projects  () {
   const projectsRef =useRef();
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const observer1 = new IntersectionObserver(
       ([entry]) => {
         if (entry.intersectionRatio > 0) {
           setInView(true);
           lineRef.current.classList.remove("hidden-line");
-          projectsRef.current.classList.add("projects")
-
         } else {
           setInView(false);
         }
@@ -32,10 +30,21 @@ export default function Projects  () {
       { threshold: [1] }
     );
     if (lineRef.current) {
-      observer.observe(lineRef.current);
+      observer1.observe(lineRef.current);
     }
+
+    const observer2 = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.intersectionRatio > 0) {
+          projectsRef.current.classList.add("projects");
+        } else {
+          projectsRef.current.classList.remove("projects");
+        }
+      },
+      { threshold: [1] }
+    );
     if (projectsRef.current) {
-      observer.observe(projectsRef.current);
+      observer2.observe(projectsRef.current);
     }
   }, []);
 
