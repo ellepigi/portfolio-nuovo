@@ -147,7 +147,8 @@ main{
 }
 
 .cards:hover .description{
-    max-height: 500%; 
+
+    max-height: 50%; 
     /* max-height: fit-content; */
 
 

@@ -35,7 +35,7 @@ export default function Contact  () {
 <section id='contact'>
 
    <div className='form'>
-   <form name="contact" method="POST" data-netlify="true">
+   <form action="https://formsubmit.co/ellepgi@gmail.com" method="POST">
       <label form='name'></label>
       <input type="text" placeholder='Your Name' name="name"></input>
       <label form='email'></label> 
