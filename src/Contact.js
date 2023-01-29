@@ -36,12 +36,12 @@ export default function Contact  () {
 
    <div className='form'>
    <form name="contact" method="POST" data-netlify="true">
-      <label form='name'>
-      <input type="text" placeholder='Your Name' name="name"></input></label>
-      <label form='email'>
-      <input type="text" placeholder='Your email' name="email"></input></label>
-      <label form="message"> 
-      <textarea placeholder='Your Message' name="message"></textarea></label> 
+      <label form='name'></label>
+      <input type="text" placeholder='Your Name' name="name"></input>
+      <label form='email'></label> 
+      <input type="text" placeholder='Your email' name="email"></input>
+      <label form="message"> </label>
+      <textarea placeholder='Your Message' name="message"></textarea>
       <div className="button-div">    
       <button type='submit' className='button1'>Submit</button>
       </div> 

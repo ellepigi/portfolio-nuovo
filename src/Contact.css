@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 .contact{
+  margin-top: 5rem;
   color: black;
   height: fit-content;
 
@@ -16,8 +17,9 @@
    
   }
   
-
-
+label{
+  display: none;
+}
 
 .contact{
   position: relative;
@@ -43,7 +45,7 @@ input{
 }
 
 input, textarea{
-  width: 400px;
+  width: 100%;
   font-family: inherit;
 }
 textarea{
@@ -59,7 +61,7 @@ form{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: fit-content;
+  width: 30%;
   gap: 10px;
 
 }
@@ -70,7 +72,7 @@ form{
   justify-content: flex-end;
 }
 
-form .button1{
+form button{
   cursor: pointer;
   font-size: 1.2rem;
   
@@ -106,7 +108,7 @@ form .button1{
   color: var(--secondary-color);
 }
 
-@media (max-width: 800px){
+/* @media (max-width: 800px){
   footer h2{
     font-size: 1rem;
   }
@@ -135,5 +137,14 @@ form .button1{
 
   input, textarea{
     width: 150px;
+  }
+} */
+
+@media (max-width: 600px){
+  form button{
+    font-size: 0.8rem;
+  }
+  .email h2{
+    font-size: 0.7rem;
   }
 }

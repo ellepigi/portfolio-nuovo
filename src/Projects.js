@@ -57,29 +57,44 @@ export default function Projects  () {
    </div>
    <div ref={projectsRef} className='projects-hidden'>
     <div className="cards">
-      <div className='card'><a href="https://github.com/ellepigi/esercizi/tree/main/todolist" target="_blank">
+      <div className='card'>
+        <a href="https://github.com/ellepigi/esercizi/tree/main/todolist" target="_blank">
         <div className='github-icon'><FaGithub></FaGithub></div></a>
         <a href="https://todolistellepigi.netlify.app" target="_blank">
-        <img src="/projects/todo.png" alt="#"/></a></div>
-      <p>Just a very simple To do list...
+        <img src="/projects/todo.png" alt="#"/></a>
+       
+</div>
+<div className='description'>
+        <p>Just a very simple To do list...
 </p>
 <div className="buttons">
-<button  className='html'>Html & CSS</button>
+<button disabled className='html'>Html & CSS</button>
 <button disabled className='javascript'>Javascript</button>
 
 </div>
+</div>
+     
+
     </div>
     <div className="cards">
-      <div className='card'><a href="https://github.com/ellepigi/react-shop-project" target="_blank">
+      <div className='card'>
+        <a href="https://github.com/ellepigi/react-shop-project" target="_blank">
         <div className='github-icon'><FaGithub></FaGithub></div></a>
         <a href="https://reactshop-ellepigi.netlify.app/" target="_blank">
-        <img src="/projects/ecommerce.png" alt="#"/></a></div>
-      <p>An ecommerce made with React, i used "Fake Store" api for the products and npm react-cart
-        for the cart... still needs some changes though!
+        <img src="/projects/ecommerce.png" alt="#"/></a>
+       
+</div>
+<div className='description'>
+        <p>An ecommerce made with React, using "Fake Store" api and the npm use-cart for the cart, 
+          still needs some changes though...
 </p>
 <div className="buttons">
-<button disabled>React</button>
+<button disabled className='react'>React</button>
+
 </div>
+</div>
+     
+
     </div>
     
 

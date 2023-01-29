@@ -1,8 +1,7 @@
 import {React, useRef, useState, useEffect} from 'react'
 import './Nav.css'
 import { RxHamburgerMenu } from 'react-icons/rx';
-
-
+ 
 
 export default function Nav  () { 
 
@@ -65,7 +64,7 @@ export default function Nav  () {
         </div>
         <div className='burger' onClick={showNav}><RxHamburgerMenu></RxHamburgerMenu></div>
         <ul>
-        <li><a href='#about'>About</a></li>
+        <li><a href='#section-skills'> My Skills</a></li>
         <li>< a href='#projects'>My Projects</a></li>
 
         <li>< a href='#contact'>Contact me</a></li>
