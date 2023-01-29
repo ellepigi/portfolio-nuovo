@@ -147,4 +147,7 @@ form button{
   .email h2{
     font-size: 0.7rem;
   }
+  form{
+    width: 60%;
+  }
 }
