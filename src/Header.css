@@ -14,7 +14,7 @@ header{
     flex-direction: column;
    justify-content: center; */
    position: relative;
-   background-color: black;
+   background-color: var(--secondary-color);
    box-shadow: 5px 5px 15px -4px rgba(0,0,0,0.71);
   padding-bottom: 2rem;
    /* box-sizing: border-box; */
@@ -119,14 +119,14 @@ color: white;
   }
 
   .github{
-    color: grey;
+    color: white;
     height: 2.5rem;
     width: 2.5rem;
     transition: 0.1s ease-in-out;
   }
 
   .github:hover{
-    color: var(--secondary-color);
+    color: black;
   }
 
 
@@ -143,7 +143,7 @@ color: white;
 @keyframes colorspan{
  
   100%{
-    color: var(--secondary-color);
+    color: black;
    }
  }
 
