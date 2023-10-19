@@ -27,31 +27,32 @@ export default function Contact  () {
    }, []);
 
 
-  return (<div className='contact'>
-    <div className='title'>
-   <h1 ><div ref={lineRef} className='line hidden-line'></div> Contact me</h1>
+  return (
+//   <div className='contact'>
+//     <div className='title'>
+//    <h1 ><div ref={lineRef} className='line hidden-line'></div> Contact me</h1>
    
-   </div>
-<section id='contact'>
+//    </div>
+// <section id='contact'>
 
-   <div className='form'>
-   <form action="https://formsubmit.co/ellepgi@gmail.com" method="POST">
-      <label form='name'></label>
-      <input type="text" placeholder='Your Name' name="name"></input>
-      <label form='email'></label> 
-      <input type="text" placeholder='Your email' name="email"></input>
-      <label form="message"> </label>
-      <textarea placeholder='Your Message' name="message"></textarea>
-      <div className="button-div">    
-      <button type='submit' className='button1'>Submit</button>
-      </div> 
-   </form>
-  </div>
-</section>
+//    <div className='form'>
+//    <form action="https://formsubmit.co/ellepgi@gmail.com" method="POST">
+//       <label form='name'></label>
+//       <input type="text" placeholder='Your Name' name="name"></input>
+//       <label form='email'></label> 
+//       <input type="text" placeholder='Your email' name="email"></input>
+//       <label form="message"> </label>
+//       <textarea placeholder='Your Message' name="message"></textarea>
+//       <div className="button-div">    
+//       <button type='submit' className='button1'>Submit</button>
+//       </div> 
+//    </form>
+//   </div>
+// </section>
 <footer>
-   <div className='email'><h2>Or send me an email at <a href= "mailto:ellepgi@gmail.com">ellepgi@gmail.com</a>!</h2></div>
+   <div className='email'><h2>Send me an email at <a href= "mailto:ellepgi@gmail.com">ellepgi@gmail.com</a>!</h2></div>
    <div className='copyright'><span>Made by Ludovico Pio Gnerre ©</span></div>
 </footer>
-</div>
+// </div>
        )
 }

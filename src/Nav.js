@@ -6,7 +6,7 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 export default function Nav  () { 
 
 
-  const [notInView, setNotInView] = useState(true);
+  // const [notInView, setNotInView] = useState(true);
 
 
   const navRef= useRef()
@@ -22,24 +22,24 @@ export default function Nav  () {
   }
 
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) {
-          setNotInView(false);
-          mainNavRef.current.classList.add("nav-sticky");
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     ([entry]) => {
+  //       if (!entry.isIntersecting) {
+  //         setNotInView(false);
+  //         mainNavRef.current.classList.add("nav-sticky");
 
-        } else {
-          setNotInView(true);
-        }
-      },
-      { threshold: [0] }
-    );
-    if (mainNavRef.current) {
-      observer.observe(mainNavRef.current);
-    }
+  //       } else {
+  //         setNotInView(true);
+  //       }
+  //     },
+  //     { threshold: [0] }
+  //   );
+  //   if (mainNavRef.current) {
+  //     observer.observe(mainNavRef.current);
+  //   }
    
-  }, []);
+  // }, []);
 
 
 

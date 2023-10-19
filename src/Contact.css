@@ -35,6 +35,7 @@ footer{
   width: 100%;
   padding-left: 10px;
   padding-bottom: 5px;
+  margin-top: 3rem;
   z-index: 2;
 
 }
@@ -86,7 +87,7 @@ form button{
 .email{
   display: flex;
   flex-wrap: wrap;
-  max-width:70vw;
+  /* max-width:70vw; */
 }
 
 .copyright{
@@ -149,5 +150,8 @@ form button{
   }
   form{
     width: 60%;
+  }
+  .copyright span{
+    font-size: 0.4rem;
   }
 }

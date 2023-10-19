@@ -4,14 +4,15 @@ import Header from './Header';
 import Projects from './Projects';
 import Contact from './Contact';
 import Skills from './Skills.js'
+import About from './About.js';
 
 function App() {
   return (<div className='q'>
     <Nav></Nav>
-    <Header/>
+    <About/>
     <Skills></Skills>
     <Projects></Projects>
-    <Contact></Contact>
+   <Contact></Contact> 
     </div>
   );
 }

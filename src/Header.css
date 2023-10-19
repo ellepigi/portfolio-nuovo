@@ -14,7 +14,9 @@ header{
     flex-direction: column;
    justify-content: center; */
    position: relative;
+   /* background-image: linear-gradient(45deg, #f04741 , var(--secondary-color)  ); */
    background-color: var(--secondary-color);
+   background-size: 400%;
    box-shadow: 5px 5px 15px -4px rgba(0,0,0,0.71);
   padding-bottom: 2rem;
    /* box-sizing: border-box; */
@@ -22,6 +24,7 @@ header{
 padding-top: 15vh;
 padding-bottom: 5vh;
 color: white;
+animation: background-gradient 5s ease-in-out infinite alternate;
   }
 
 
@@ -33,7 +36,7 @@ color: white;
 
   h1 span{
     color: inherit;
-    animation: colorspan 1s ease-in forwards;
+    animation: colorspan 15s ease-in forwards;
 
   }
 
@@ -140,12 +143,7 @@ color: white;
   }
  }
  
-@keyframes colorspan{
- 
-  100%{
-    color: black;
-   }
- }
+
 
 
 
@@ -218,4 +216,11 @@ h2{
 
   }
 
-  
+  @keyframes background-gradient {
+    0%{
+      background-position: left;
+    }
+    100%{
+      background-position: center;
+    }
+  }
